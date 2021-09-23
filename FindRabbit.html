@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindRabbit</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 100px;
+        }
+        .find {
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: tomato;
+            padding: 5px 10px;
+            outline: 0;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="find">Find a rabbit🐇</button>
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+
+    <img src="rabbit.png" alt="rabbit" id="rabbit">
+
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+    <img src="carrot.png" alt="carrot" class="carrot">
+
+    <script>
+        const button = document.querySelector('.find');
+        const rabbit = document.querySelector('#rabbit');
+        button.addEventListener('click', () => {
+            rabbit.scrollIntoView({behavior: 'smooth', block: 'center'});
+        })
+    </script>
+</body>
+</html>
