@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box; /* border까지 사이즈 적용*/
+  }
+  ul {
+      padding: 0;
+  }
+  body {
+    margin: 0;
+    background-color: #ced3df;
+    text-align: center;
+  }
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .list {
+    width: 400px;
+    margin: auto;
+    background-color: #f1f0f7;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 1px 15px -2px #000000; 
+    box-shadow: 1px 1px 15px -2px #000000;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+  .header {
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(120deg,
+        rgba(165,95,255,1) 10%,
+        rgba(173,181,255,1) 90%
+    );
+    border-radius: 20px 20px 0 0;
+  }
+  .items {
+    margin: 5px 0;
+    height: 400px;;
+    overflow-y: auto; /* 요소가 많아져도 저절로 늘어남 */
+  }
+  .item_row {
+    padding: 6px
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 5px 30px;
+  }
+  .removeButton{
+    transition: all 300ms ease-in;
+    cursor: pointer;
+  }
+  .removeButton:hover{
+    color: rebeccapurple;
+    transform: scale(1.1);
+}
+  .divider {
+    width: 90%;
+    height: 1px;
+    background-color: #d8baff;
+    margin: auto;
+  }
+  .item_name {
+    font-size: 15px;
+  }
+
+  .footer {
+    background: linear-gradient(120deg,
+        rgba(165,95,255,1) 10%,
+        rgba(173,181,255,1) 90%
+    );
+    border-radius: 0 0 20px 20px;
+  }
+  .inputText {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  .inputText[type="text"]:focus {
+    outline: none;
+  }
+  .addButton {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    transition: transform 300ms ease-in;
+  }
+  .addButton:hover {
+    transform: scale(1.1);
+  }
