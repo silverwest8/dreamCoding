@@ -26,15 +26,14 @@ function createItem(text) {
   let item_name = document.createElement('span');
   let button = document.createElement('button');
   let divider = document.createElement('div');
-  item_row.classList.add('item_row');
-  // item_row.setAttribute('class', 'item_row')
-  item.classList.add('item');
+  item_row.classList.add('item_row'); // item_row.setAttribute('class', 'item_row')
+  item.classList.add('item'); 
   item_name.classList.add('item_name');
   item_name.innerText = text;
   button.classList.add('removeButton');
   button.innerHTML = `<i class="far fa-trash-alt"></i>`;
   button.addEventListener('click', () => {
-    items.removeChild(item_row);
+    items.removeChild(item_row); //itemRow.remove();
   })
   divider.classList.add('divider');
   // 3. 아이템스 컨테이너 안에 새로 만든 아이템을 추가한다
